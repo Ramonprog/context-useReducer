@@ -1,9 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Cadastro = () => {
   return (
     <div>
-      <h1>cadastro</h1>
+      tela de cadastro
+      <br />
+      <button>
+        <Link to={"/exibir"}>Ir para Mostrar dados</Link>
+      </button>
     </div>
   );
 };
