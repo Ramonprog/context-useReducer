@@ -1,10 +1,13 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Context } from "../../context/Context";
 
 const Cadastro = () => {
+  const { idade, nome } = useContext(Context);
+
   return (
     <div>
-      tela de cadastro
+      olá {nome} voce tem {idade} anos
       <br />
       <button>
         <Link to={"/exibir"}>Ir para Mostrar dados</Link>
