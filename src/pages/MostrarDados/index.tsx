@@ -1,7 +1,13 @@
+import { Link } from "react-router-dom";
+
 const MostrarDados = () => {
   return (
     <div>
-      <h1>mostrar dados</h1>
+      Mostrar dados
+      <br />
+      <button>
+        <Link to={"/"}>Voltar para cadastro</Link>
+      </button>
     </div>
   );
 };
