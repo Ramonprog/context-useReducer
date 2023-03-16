@@ -6,8 +6,8 @@ export type UserType = {
 };
 
 export const userInitialState: UserType = {
-  nome: "Ramon",
-  idade: 90,
+  nome: "",
+  idade: 0,
 };
 
 export const userReducer = (state: UserType, action: ReducerActionType) => {

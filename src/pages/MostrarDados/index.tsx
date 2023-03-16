@@ -17,9 +17,11 @@ const MostrarDados = () => {
 
   return (
     <div>
-      meu nome é {state.user.nome}
-      <br />
-      <button onClick={handleChangeName}>Trocar nome para Pedro</button>
+      {state.user.nome && (
+        <p>
+          meu nome é {state.user.nome} e eu tenho {state.user.idade} anos
+        </p>
+      )}
       <button>
         <Link to={"/"}>Voltar para cadastro</Link>
       </button>
