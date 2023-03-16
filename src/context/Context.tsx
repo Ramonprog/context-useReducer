@@ -1,4 +1,4 @@
-import React, { Children, createContext } from "react";
+import React, { createContext } from "react";
 
 type ContextType = {
   nome: string;
