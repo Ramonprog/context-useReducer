@@ -19,6 +19,7 @@ const MostrarDados = () => {
     <div>
       {state.user.nome && (
         <p>
+          {state.theme.status}
           meu nome é {state.user.nome} e eu tenho {state.user.idade} anos
         </p>
       )}
